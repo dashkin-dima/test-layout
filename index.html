@@ -1,0 +1,410 @@
+<!-- //https://www.figma.com/file/LKgUmmO5MjD7ztb6rSXXVc/%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D1%8B%D0%B9?node-id=1%3A107 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>test layout</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container--header__top">
+          <div class="header__top-inner">
+            <div class="header__logo logo">
+              <a class="logo_link" href="#">
+                <img class="logo_img" src="img/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--header" href="#">
+                    О КОМПАНИИ
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--header" href="#">
+                    НАПРАВЛЕНИЯ
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--header" href="#">ОТЗЫВЫ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--header" href="#">НОВОСТИ</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--header" href="#">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__list-item">
+                  <div class="menu__button button1" id="menu__button">
+                    Обратный звонок
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__content">
+        <div class="container--header__content">
+          <div class="header__content-inner">
+            <div class="header__title">Начни с нами</div>
+            <div class="header__description">Свое приключение</div>
+            <div class="header__button button2">перейти</div>
+          </div>
+        </div>
+        <div class="header__slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/background1.png" alt="slide" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/background2.png" alt="slide" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/background3.png" alt="slide" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="slogans">
+      <div class="container">
+        <div class="slogans-inner">
+          <div class="slogans__item">
+            <img class="slogans__img" src="img/slogan1.svg" alt="slogan" />
+            <div class="slogans__title">Спонтанно</div>
+            <div class="slogans__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's
+            </div>
+          </div>
+          <div class="slogans__item">
+            <img class="slogans__img" src="img/slogan2.svg" alt="slogan" />
+            <div class="slogans__title">энергично</div>
+            <div class="slogans__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's
+            </div>
+          </div>
+          <div class="slogans__item">
+            <img class="slogans__img" src="img/slogan3.svg" alt="slogan" />
+            <div class="slogans__title">весело</div>
+            <div class="slogans__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="split">
+      <img class="split__img" src="img/split.svg" alt="split" />
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about__text">
+            <div class="about__title">О нас</div>
+            <div class="about__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type
+            </div>
+            <div class="about__button button2">подробнее</div>
+          </div>
+          <img src="img/about.png" alt="about" class="about__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__tabs tabs">
+        <div class="container">
+          <nav class="tabs__links">
+            <a
+              class="tabs__link tabs__link-active"
+              onclick="changeTab(event, 'tab1')"
+            >
+              Личные данные
+            </a>
+            <a class="tabs__link" onclick="changeTab(event, 'tab2')">
+              правила участия
+            </a>
+          </nav>
+          <div class="indicator">
+            <hr class="indicator__h1" />
+            <hr class="indicator__h2" />
+          </div>
+          <div class="tabs__body">
+            <div class="tabs__block tabs__block-active" id="tab1">
+              <div class="tabs__title">Заполните форму</div>
+
+              <div class="tabs__form-contact form-contact">
+                <div class="form-contact__icon form-contact__input-field">
+                  <img class="form-contact__img" id="form-contact__img" />
+                  <div class="form-contact__subscription">
+                    <div class="form-contact__text">Загрузите фото</div>
+                    <div
+                      class="form-contact__img-button button1"
+                      id="form-contact__img-button"
+                    >
+                      выберите файл
+                    </div>
+                    <input
+                      type="file"
+                      class="form-contact__input-img"
+                      id="form-contact__img-input"
+                    />
+                  </div>
+                </div>
+                <div class="form-contact__input-field">
+                  <div class="form-contact__text">пол</div>
+                  <select
+                    class="form-contact__select form-contact__select-text"
+                    id="form-contact__select"
+                  >
+                    <option class="form-contact__select-text">не выбран</option>
+                    <option class="form-contact__select-text">мужской</option>
+                    <option class="form-contact__select-text">женский</option>
+                  </select>
+                </div>
+                <div class="form-contact__input-field">
+                  <div class="form-contact__text">имя</div>
+                  <input
+                    class="form-contact__input form-contact__text"
+                    type="text"
+                    id="form-contact__name"
+                  />
+                </div>
+                <div class="form-contact__input-field">
+                  <div class="form-contact__text">телефон</div>
+                  <input
+                    class="form-contact__input form-contact__text phone-mask"
+                    type="tel"
+                    placeholder="+7 (   )   -   -"
+                    id="form-contact__phone"
+                  />
+                </div>
+                <div class="form-contact__input-field">
+                  <div class="form-contact__text">фамилия</div>
+                  <input
+                    class="form-contact__input form-contact__text"
+                    type="text"
+                    id="form-contact__surname"
+                  />
+                </div>
+                <div class="form-contact__input-field">
+                  <div class="form-contact__text">E-mail</div>
+                  <input
+                    class="form-contact__input form-contact__text"
+                    type="email"
+                    id="form-contact__email"
+                  />
+                </div>
+                <div class="form-contact__submit-button button2" onclick="sendPersonalData()">Отправить</div>
+              </div>
+            </div>
+            <div class="tabs__block" id="tab2">
+              <div class="tabs__title">будь собой</div>
+              <div class="tabs__body rules-participation">
+                t is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout. The
+                point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+                <ul class="rules-participation__ul">
+                  <li class="rules-participation__li">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                  </li>
+                  <li class="rules-participation__li">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                  </li>
+                  <li class="rules-participation__li">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting
+                  </li>
+                </ul>
+                <span class="rules-participation--bold"
+                  >Удачи в твоих начинаниях)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container--footer">
+        <div class="footer-inner">
+          <div class="footer__menu menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--footer" href="#">
+                  О КОМПАНИИ
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--footer" href="#">
+                  НАПРАВЛЕНИЯ
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--footer" href="#">ОТЗЫВЫ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--footer" href="#">НОВОСТИ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link menu__link--footer" href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__link" href="#">
+              <svg
+                class="footer__svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="18" cy="18" r="17.5" stroke="#ECA078" />
+                <path
+                  d="M26.251 13.7541C26.251 13.7541 26.1178 13.3735 25.2899 13.4781L22.5494 13.4972C22.34 13.4686 22.1878 13.5542 22.1878 13.5542C22.1878 13.5542 22.026 13.6399 21.9499 13.8492C21.5026 15.0006 20.9317 15.9903 20.9317 15.9903C19.7137 18.0647 19.2188 18.1789 19.019 18.0457C18.5527 17.7507 18.6764 16.8467 18.6764 16.1996C18.6764 14.1823 18.9809 13.3449 18.0769 13.126C17.782 13.0594 17.5631 13.0118 16.7923 13.0023C15.8122 12.9928 14.9843 13.0023 14.5181 13.2307C14.204 13.383 13.9661 13.7255 14.1089 13.7446C14.2897 13.7731 14.6989 13.8587 14.9177 14.1537C14.9177 14.1537 15.1556 14.5439 15.1937 15.4003C15.2983 17.7697 14.813 18.0647 14.813 18.0647C14.4419 18.2646 13.7949 17.9315 12.8433 15.9713C12.8433 15.9713 12.2914 15.0006 11.8631 13.9349C11.787 13.735 11.6348 13.6304 11.6348 13.6304C11.6348 13.6304 11.4635 13.4971 11.2161 13.4591L8.60875 13.4781C8.20909 13.4781 8.06635 13.6589 8.06635 13.6589C8.06635 13.6589 7.92362 13.8112 8.05684 14.1252C10.0932 18.9116 12.4151 21.3096 12.4151 21.3096C12.4151 21.3096 14.5371 23.5268 16.9446 23.3745H18.0389C18.3719 23.3459 18.5432 23.1652 18.5432 23.1652C18.5432 23.1652 18.6955 22.9939 18.686 22.6799C18.6669 21.2144 19.3521 20.9956 19.3521 20.9956C20.0182 20.7862 20.8746 22.4134 21.7881 23.0414C21.7881 23.0414 22.4828 23.5172 23.0061 23.4126L25.4422 23.3745C26.7268 23.365 26.1178 22.2992 26.1178 22.2992C26.0702 22.2136 25.7657 21.557 24.3003 20.1962C22.7777 18.7784 22.9776 19.0068 24.8236 16.5517C25.9465 15.0577 26.3937 14.1442 26.251 13.754V13.7541Z"
+                  fill="#ECA078"
+                />
+              </svg>
+            </a>
+            <a class="footer__link" href="#">
+              <svg
+                class="footer__svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="18" cy="18" r="17.5" stroke="#ECA078" />
+                <path
+                  d="M21.9632 11.1106C21.7144 11.0737 20.8572 11 19.8618 11C17.7788 11 16.3503 12.2719 16.3503 14.6037V16.613H14V19.3411H16.3503V26.3366H19.1706V19.3411H21.5116L21.8711 16.613H19.1706V14.871C19.1706 14.0876 19.3826 13.5438 20.5162 13.5438H21.9632V11.1106Z"
+                  fill="#ECA078"
+                />
+              </svg>
+            </a>
+            <a class="footer__link" href="#">
+              <svg
+                class="footer__svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="18" cy="18" r="17.5" stroke="#ECA078" />
+                <path
+                  d="M20.4426 17.8321C20.4426 19.2699 19.2699 20.4426 17.8321 20.4426C16.3943 20.4426 15.2216 19.2699 15.2216 17.8321C15.2216 16.3943 16.3943 15.2216 17.8321 15.2216C19.2699 15.2216 20.4426 16.3943 20.4426 17.8321ZM21.8498 17.8321C21.8498 15.6091 20.0551 13.8144 17.8321 13.8144C15.6091 13.8144 13.8144 15.6091 13.8144 17.8321C13.8144 20.0551 15.6091 21.8498 17.8321 21.8498C20.0551 21.8498 21.8498 20.0551 21.8498 17.8321ZM22.9511 13.6512C22.9511 13.1312 22.533 12.7131 22.0129 12.7131C21.4929 12.7131 21.0748 13.1312 21.0748 13.6512C21.0748 14.1713 21.4929 14.5894 22.0129 14.5894C22.533 14.5894 22.9511 14.1713 22.9511 13.6512ZM17.8321 11.4078C18.9742 11.4078 21.4215 11.3161 22.4514 11.724C22.8083 11.8667 23.0734 12.0401 23.3488 12.3154C23.6241 12.5907 23.7975 12.8559 23.9402 13.2128C24.3481 14.2427 24.2563 16.69 24.2563 17.8321C24.2563 18.9742 24.3481 21.4215 23.9402 22.4514C23.7975 22.8083 23.6241 23.0734 23.3488 23.3488C23.0734 23.6241 22.8083 23.7974 22.4514 23.9402C21.4215 24.3481 18.9742 24.2563 17.8321 24.2563C16.69 24.2563 14.2427 24.3481 13.2128 23.9402C12.8559 23.7974 12.5907 23.6241 12.3154 23.3488C12.0401 23.0734 11.8667 22.8083 11.724 22.4514C11.3161 21.4215 11.4079 18.9742 11.4079 17.8321C11.4079 16.69 11.3161 14.2427 11.724 13.2128C11.8667 12.8559 12.0401 12.5907 12.3154 12.3154C12.5907 12.0401 12.8559 11.8667 13.2128 11.724C14.2427 11.3161 16.69 11.4078 17.8321 11.4078ZM25.6635 17.8321C25.6635 16.7512 25.6737 15.6805 25.6126 14.5996C25.5514 13.3453 25.2658 12.2338 24.3481 11.3161C23.4303 10.3983 22.3189 10.1128 21.0646 10.0516C19.9837 9.99044 18.913 10.0006 17.8321 10.0006C16.7512 10.0006 15.6805 9.99045 14.5996 10.0516C13.3453 10.1128 12.2338 10.3983 11.3161 11.3161C10.3983 12.2338 10.1128 13.3453 10.0516 14.5996C9.99044 15.6805 10.0006 16.7512 10.0006 17.8321C10.0006 18.913 9.99044 19.9837 10.0516 21.0646C10.1128 22.3189 10.3983 23.4303 11.3161 24.3481C12.2338 25.2658 13.3453 25.5514 14.5996 25.6125C15.6805 25.6737 16.7512 25.6635 17.8321 25.6635C18.913 25.6635 19.9837 25.6737 21.0646 25.6125C22.3189 25.5514 23.4303 25.2658 24.3481 24.3481C25.2658 23.4303 25.5514 22.3189 25.6126 21.0646C25.6737 19.9837 25.6635 18.913 25.6635 17.8321Z"
+                  fill="#ECA078"
+                />
+              </svg>
+            </a>
+            <a class="footer__link" href="#">
+              <svg
+                class="footer__svg"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="18" cy="18" r="17.5" stroke="#ECA078" />
+                <path
+                  d="M18.4948 17.2489C21.0441 17.2489 23.1243 15.1788 23.1243 12.6295C23.1243 10.07 21.0441 8 18.4948 8C15.9455 8 13.8653 10.07 13.8653 12.6295C13.8653 15.1788 15.9455 17.2489 18.4948 17.2489ZM18.4948 10.3454C19.7491 10.3454 20.7688 11.3651 20.7688 12.6295C20.7688 13.8838 19.7491 14.9035 18.4948 14.9035C17.2406 14.9035 16.2208 13.8838 16.2208 12.6295C16.2208 11.3651 17.2406 10.3454 18.4948 10.3454ZM23.8279 17.8097C23.5628 17.2897 22.8388 16.8512 21.8803 17.6058C21.8803 17.6058 20.5852 18.6357 18.4948 18.6357C16.4044 18.6357 15.1093 17.6058 15.1093 17.6058C14.1508 16.8512 13.4268 17.2897 13.1617 17.8097C12.713 18.7275 13.2229 19.1659 14.3853 19.9205C15.3745 20.5528 16.7409 20.7873 17.6178 20.8791L16.8836 21.6133C15.8435 22.6432 14.8544 23.6425 14.161 24.3359C13.7429 24.754 13.7429 25.427 14.161 25.8349L14.2834 25.9675C14.6913 26.3754 15.3643 26.3754 15.7824 25.9675L18.505 23.2346C19.5451 24.2747 20.5444 25.2741 21.2277 25.9675C21.6457 26.3754 22.3188 26.3754 22.7368 25.9675L22.8592 25.8349C23.2671 25.427 23.2671 24.754 22.8592 24.3359L20.1366 21.6133L19.3922 20.8791C20.2793 20.7873 21.6254 20.5426 22.6043 19.9205C23.7668 19.1659 24.2766 18.7275 23.8279 17.8097Z"
+                  fill="#ECA078"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal windows -->
+    <div class="modal" id="modal">
+      <div class="modal__content">
+        <svg
+          class="modal__close"
+          id="modal__close"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1L18.7175 18.7175" stroke="#ECA078" stroke-width="2" />
+          <path
+            d="M18.7178 1L1.00027 18.7175"
+            stroke="#ECA078"
+            stroke-width="2"
+          />
+        </svg>
+
+        <div class="modal__title">Заполните форму</div>
+        <div class="modal__form">
+          <div class="modal__form-input-field-first-line-container">
+            <div class="modal__form-input-field-first-line-inner1">
+              <div class="modal__form-text">Имя</div>
+              <input class="modal__form-input modal__form-text" type="text" id="modal__form-name" />
+            </div>
+          </div>
+          <div class="modal__form-input-field-first-line-container">
+            <div class="modal__form-input-field-first-line-inner2">
+              <div class="modal__form-text">Телефон</div>
+              <input class="modal__form-input modal__form-text phone-mask" type="tel" placeholder="+7 (   )   -   -" id="modal__form-phone"/>
+            </div> 
+          </div>
+          <div class="modal__form-input-field">
+            <div class="modal__form-text">E-mail</div>
+            <input class="modal__form-input modal__form-text" type="email" id="modal__form-email" />
+          </div>
+          <div class="modal__form-input-field">
+            <div class="modal__form-text">Задать вопрос</div>
+            <textarea class="modal__form-textarea modal__form-text" id="modal__form-question"></textarea>
+          </div>
+          <div class="modal__subscription">Отправляя любые формы запросов, Вы соглашаетесь с условиями  <a href="#" class="modal__subscription-link">«Положения о конфиденциальности»</a></div>
+          <div class="modal__submit-container">
+            <div class="modal__submit button2" onclick="sendQuestion()">отправить</div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/imask.js"></script>
+  <script src="js/main.js"></script>
+</html>
